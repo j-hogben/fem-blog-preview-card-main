@@ -16,9 +16,39 @@
 
     <title>Frontend Mentor | Blog preview card</title>
   </head>
-  <body>
-    Learning Published 21 Dec 2023 HTML & CSS foundations These languages are
-    the backbone of every website, defining structure, content, and
-    presentation. Greg Hooper
+  <body class="bg-bananaYellow font-body grid min-h-dvh place-items-center">
+    <article
+      class="rounded-card border-powderBlack text-powderBlack shadow-cardMobile mx-6 grid max-w-96 space-y-6 border bg-white p-6 transition-all"
+    >
+      <div
+        class="h-cardImg rounded-cardImg bg-[url('/assets/images/illustration-article.svg')] bg-cover bg-center"
+      ></div>
+      <div class="flex flex-col gap-3">
+        <span
+          class="bg-bananaYellow tabletText:text-sm/normal max-w-fit rounded px-3 py-1 text-xs/normal font-extrabold transition-all"
+          >Learning</span
+        >
+        <p class="tabletText:text-sm/normal text-xs/normal transition-all">
+          Published 21 Dec 2023
+        </p>
+        <h3
+          class="hover:text-bananaYellow tabletText:text-2xl/normal max-w-fit cursor-pointer text-xl/normal font-extrabold transition-all"
+        >
+          HTML & CSS foundations
+        </h3>
+        <p class="text-platinum tabletText:text-base/normal text-sm/normal">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+      </div>
+      <div class="flex items-center gap-3">
+        <img
+          src="/assets/images/image-avatar.webp"
+          alt="Greg Hooper profile picture"
+          class="h-8"
+        />
+        <span class="text-sm/normal font-extrabold">Greg Hooper</span>
+      </div>
+    </article>
   </body>
 </html>
